@@ -12,8 +12,9 @@ palette
 ***************************************************/
 :root {
 	--color-primary: #1abc9c;
-	--color-secondary: #3A546D;
-	--color-bg-footer: #2c3e50;
+	--color-secondary: #2c3e50;
+	--color-secondary-text: #333333;
+	--color-bg-footer: #3A546D;
 }
 
 /***************************************************
@@ -27,14 +28,27 @@ variables
 /***************************************************
 utility
 ***************************************************/
+.color_text_secondary
+{
+    color: var(--color-secondary-text);
+}
 
+.color_text_primary
+{
+    color: var(--color-primary);
+}
+
+.width-100
+{
+    width: 100%;
+}
 
 /***************************************************
 general
 ***************************************************/
 .container-sm
 {
-    height: 200px;
+    min-height: 200px;
 }
 
 
@@ -56,16 +70,26 @@ main section:nth-child(odd)
     background-color: var(--color-primary);
 }
 
+main section:nth-child(even)
+{
+    color: var(--color-secondary);
+}
+
+#avatar
+{
+    width: 250px;
+}
+
 
 /***************************************************
 footer
 ***************************************************/
 footer section:first-child
 {
-    background-color: var(--color-secondary);
+    background-color: var(--color-bg-footer);
 }
 
 footer section:last-child
 {
-    background-color: var(--color-bg-footer);
+    background-color: var(--color-secondary);
 }
