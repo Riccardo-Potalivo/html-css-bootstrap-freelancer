@@ -1,10 +1,11 @@
-*
+*,
+*::before,
+*::after
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 /***************************************************
@@ -38,15 +39,44 @@ utility
     color: var(--color-primary);
 }
 
-.width-100
+.w_15
 {
-    width: 100%;
+    width: 15%;
 }
+
+.gap_x_2
+{
+    gap: 2%;
+}
+
+div.border_inherit
+{
+    /* border-color: inherit !important; */
+    border-color: inherit !important;
+}
+
 
 /***************************************************
 general
 ***************************************************/
+html
+{
+    font-size: 18px;
+}
 
+/* @media screen and (min-width:768px)
+{
+    html
+    {
+        font-size: 35px;
+    }
+    
+} */
+
+body
+{
+    font-family: 'Raleway', sans-serif  !important;
+}
 
 /***************************************************
 header
