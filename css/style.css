@@ -22,7 +22,7 @@ palette
 variables
 ***************************************************/
 :root {
-	--nav-height: 90px;
+	--nav-height: 85px;
 }
 
 
@@ -157,7 +157,7 @@ main
 ***************************************************/
 main
 {
-    margin-top: 85px;
+    margin-top: var(--nav-height);
 }
 
 main section:nth-child(odd)
@@ -218,6 +218,15 @@ form textarea::placeholder
     /* color: red !important; */
     font-weight: 600;
     font-size: 1.2rem;
+}
+
+#portfolio,
+#about,
+#contact
+{
+    position:relative;
+    top:calc(-1 * var(--nav-height));
+    padding-top: var(--nav-height);
 }
 
 
