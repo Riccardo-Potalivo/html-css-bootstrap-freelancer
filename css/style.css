@@ -37,8 +37,16 @@ utility
 
 .btn_color_primary
 {
-    background-color: var(--color-primary) !important;
-    border-color: var(--color-primary) !important;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn_color_primary:hover
+{
+    background-color: white;
+    border-color: var(--color-primary);
+    color: var(--color-primary) !important;
+    font-weight: 600 !important;
 }
 .color_text_secondary
 {
@@ -107,7 +115,7 @@ div.border_inherit
     border-color: inherit !important;
 }
 
-a
+footer a
 {
     text-decoration: none !important;
     color: inherit !important;
@@ -135,6 +143,30 @@ main section:nth-child(odd)
 main section:nth-child(even)
 {
     color: var(--color-secondary);
+}
+
+.img_container
+{
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.img_container:hover::after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '+';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 6rem;
+    background-color: #00000080;
 }
 
 #avatar
